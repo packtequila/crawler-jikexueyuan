@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS `db_jikexueyuan`;
+CREATE DATABASE `db_jikexueyuan` DEFAULT CHARACTER SET utf8mb4 DEFAULT COLLATE utf8mb4_general_ci;
+USE `db_jikexueyuan`;
+set names utf8mb4;
+
+DROP TABLE IF EXISTS `jikexueyuan`;
+CREATE TABLE `jikexueyuan` (
+	`ID` char(3),
+    `Title` char(255),
+    `Description` char(255),
+    `Time` char(30),
+	`Level` char(255),
+	`LearnerCount` char(20));
